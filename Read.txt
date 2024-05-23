@@ -1,0 +1,12 @@
+22/05/2023
+
+-> install qrcode library
+-> Make 3 pages 
+-> Home 
+-> About
+-> Contact
+-> Enter Text/URL Input 
+-> Download Button and generate QR Button 
+-> install react-router-dom
+-> install react-bootstrap
+-> import react bootstrap
