@@ -55,4 +55,19 @@
   }
 
   .border {
+    width: 40px;
+    height: 37px;
+  }
+
+  .btn-primary {
+    /* background-color: black; */
+    border-color: black;
+    border-width: 2px;
+  }
+
+  .btn-primary:hover {
+    /* background-color: black; */
+    border-color: black;
+    border-width: 2px;
+    background-color: black;
   }

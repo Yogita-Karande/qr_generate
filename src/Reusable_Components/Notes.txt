@@ -1,0 +1,14 @@
+/*** Notes */
+
+-> Generate and Download QR 
+
+Requirment 
+
+library 
+download functionality
+useState for manage data
+handle  change
+
+-> Install npm install qrcode.react  
+-> import QRCode from 'qrcode.react';
+
