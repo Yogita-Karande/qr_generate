@@ -34,7 +34,7 @@
         padding-right: 25px; 
     }
     .card-style {
-        height: 550px;
+       height: 500px;
     }
   }
 
@@ -71,3 +71,5 @@
     border-width: 2px;
     background-color: black;
   }
+  
+  

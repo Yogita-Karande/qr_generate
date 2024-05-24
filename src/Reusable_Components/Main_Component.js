@@ -1,25 +1,25 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Color from './Color';
-import Logo from './Logo';
-import QR_Code from './QR_Code';
 
 function Main_Component() {
-  return (
-    <>
-        <Container>
-            <Row>
-                <Col>
-                    <Color/>
-                    <Logo/>
-                </Col>
-                <Col>
-                    <QR_Code/>
-                </Col>
-            </Row>
-        </Container>
-    </>
-  )
+    return (
+        <>
+            {/* <Container className='min-vh-100'>
+                <CardGroup>
+                    <Card style={{height:'300px'}}>
+                        <Row>
+                            <Col>
+                                <Color />
+                                <Logo />
+                            </Col>
+                            <Col>
+                                <QR_Code />
+                            </Col>
+                        </Row>
+                    </Card>
+                </CardGroup>
+            </Container> */}
+        </>
+    )
 }
 
 export default Main_Component

@@ -1,11 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Home from './Components/Home';
+import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 // import QR_Code from './Reusable_Components/QR_Code';
 // import Color from './Reusable_Components/Color';
-import Main_Component from './Reusable_Components/Main_Component';
 
 function App() {
   return (
@@ -13,13 +12,13 @@ function App() {
       <BrowserRouter>
       <Navbar/>
         <Routes>
-          {/* <Route path='/' element={<Home/>}/> */}
+          <Route path='/' element={<Home/>}/>
         </Routes>
       </BrowserRouter>
       {/* <QR_Code/> */}
       {/* <Color/> */}
       {/* <Logo/> */}
-      <Main_Component/>
+      {/* <Main_Component/> */}
     </div>
   );
 }
