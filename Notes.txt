@@ -1,0 +1,6 @@
+QR Code
+	Study of all url page
+	then study of common list 
+	show information after scan
+	
+	

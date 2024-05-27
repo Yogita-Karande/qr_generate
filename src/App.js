@@ -3,8 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-// import QR_Code from './Reusable_Components/QR_Code';
-// import Color from './Reusable_Components/Color';
+
 
 function App() {
   return (
@@ -13,12 +12,14 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          {/* <Route path='data' element={<KC_FABRICS/>}/>
+          <Route path='data' element={<SAROM/>}/>
+          <Route path='data' element={<DECOR/>}/>
+          <Route path='data' element={<VJF/>}/>
+          <Route path='data' element={<DECOR2/>}/>
+          <Route path='qrcodescanner' element={<QRCodeScanner/>}/> */}
         </Routes>
       </BrowserRouter>
-      {/* <QR_Code/> */}
-      {/* <Color/> */}
-      {/* <Logo/> */}
-      {/* <Main_Component/> */}
     </div>
   );
 }

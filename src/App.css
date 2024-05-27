@@ -1,6 +1,12 @@
-
-.button {
+.generate_button {
     margin-right: 40px;
+    background-color: rgb(32, 203, 44);
+    border-color:rgb(32, 203, 44) ;
+}
+
+.generate_button:hover {
+    border-color:rgb(32, 203, 44) ;
+    background-color:rgb(32, 203, 44) ;
 }
 
 .border {
@@ -52,6 +58,20 @@
     .choose-color{
         width: 60px;
     }
+    .delete-button{
+       margin-top: 10px;
+       display: block;
+       width: 100%;
+    }  
+    .add-button {
+        display: block;
+        width: 100%;       
+    }
+    .change-button {
+        display: block;
+        width: 100%;
+        margin-top: 10px; 
+    }
   }
 
   .border {
@@ -59,17 +79,26 @@
     height: 37px;
   }
 
-  .btn-primary {
-    /* background-color: black; */
+  .add-button {
     border-color: black;
-    border-width: 2px;
+    
+  }
+  .add-button:hover {
+    border-color: black;
   }
 
-  .btn-primary:hover {
-    /* background-color: black; */
+  .change-button {
     border-color: black;
-    border-width: 2px;
-    background-color: black;
+  }
+  .change-button:hover {
+    border-color: black;
+  }
+
+  .delete-button {
+    border-color: black;
+  }
+  .delete-button:hover {
+    border-color: black;
   }
   
   
