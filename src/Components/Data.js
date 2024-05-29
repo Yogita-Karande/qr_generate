@@ -16,14 +16,12 @@ const KC_FABRICS = () => {
                         </thead>
 
                         <tbody>
-
                             <tr>
                                 <td>CONCEPT</td>
                                 <td className='text-center'>140</td>
                                 <td className='text-center'>60019200</td>
                                 <td className='text-center'>657</td>
                             </tr>
-
                             <tr>
                                 <td colSpan={4}>323016, 323042, 323047, 323049, 323061, 323078, 323102, 323106, 323114, 323122, 323139, 323146</td>
                             </tr>
@@ -69,6 +67,7 @@ const KC_FABRICS = () => {
 
 const SAROM = () => {
     return (
+
         <Container className='min-vh-100'>
             <Row>
                 <Col>
@@ -174,6 +173,7 @@ const SAROM = () => {
 
 const DECOR = () => {
     return (
+        
         <Container className='min-vh-100'>
             <Row>
                 <Col>
@@ -371,6 +371,7 @@ const VJF = () => {
 
 const DECOR2 = () => {
     return (
+        
         <Container className='min-vh-100'>
             <Row>
                 <Col>

@@ -2,5 +2,8 @@ QR Code
 	Study of all url page
 	then study of common list 
 	show information after scan
-	
-	
+
+28/05/2024
+
+-> make different component for different data
+-> then paste url and go to our website

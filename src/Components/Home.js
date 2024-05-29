@@ -2,15 +2,15 @@ import html2canvas from 'html2canvas';
 import QRCode from 'qrcode.react';
 import { useRef, useState } from 'react';
 import { Button, Card, Col, Container, Form, FormLabel, Image, Row } from 'react-bootstrap';
-import KC_FABRICS, { DECOR, DECOR2, SAROM, VJF } from './Data';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
     const [inputValue, setInputValue] = useState('');
     const [qrValue, setQrValue] = useState('');
     const [logoSrc, setLogoSrc] = useState('');
     const [qrColor, setQrColor] = useState('#000000');
-    const [scannedValue, setScannedValue] = useState('');
-    const [functionData, setFunctionData] = useState([]);
+    const qrRef = useRef(null);
+    let navigate = useNavigate()
 
     const handleLogoAdd = (event) => {
         const file = event.target.files[0];
@@ -29,8 +29,6 @@ function Home() {
         setQrValue(inputValue);
     };
 
-    const qrRef = useRef(null)
-
     const handleDownload = () => {
         html2canvas(qrRef.current).then((canvas) => {
             const imgData = canvas.toDataURL('image/png');
@@ -40,17 +38,6 @@ function Home() {
             link.click();
         });
     };
-
-    const functions = {
-        KC_FABRICS,
-        SAROM,
-        DECOR,
-        VJF,
-        DECOR2
-    };
-
-    const SelectedFunction = functions[scannedValue];
-
     const presetColors = ['#000000', '#dc3545', '#007bff', '#ffc107', '#6c757d'];
 
     return (
@@ -96,7 +83,7 @@ function Home() {
                                         id="qrCode"
                                         value={qrValue}
                                         size={300}
-                                        fgColor={qrColor}
+                                        fgColor={qrColor}                                 
                                         imageSettings={logoSrc ? {
                                             src: logoSrc,
                                             x: null,
@@ -105,6 +92,7 @@ function Home() {
                                             width: 50,
                                             excavate: true,
                                         } : null}
+                                       
                                     />
                                 ) : (
                                     <Image src='./assets/Images/qr-code.png' alt='qr_code' width='320px' />
